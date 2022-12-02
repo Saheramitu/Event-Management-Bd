@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap');
+
+:root {
+    --main-color: #3867d6;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #444;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+
+body {
+    background: #111;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.heading {
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.heading span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.7rem 9%;
+}
+
+.header .logo {
+    font-weight: bolder;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.header .logo span {
+    color: var(--main-color);
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    color: #fff;
+    margin-left: 2rem;
+
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+}
+
+#menu-bars {
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+
+}
+
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    background: #666;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: var(--main-color);
+}
+
+.title {
+    color: #3867d6;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+
+div.cover {
+    width: 100%;
+    height: 450px;
+    background-image: url(../images/price11.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 40px;
+}
+
+
+.price .content h3 {
+    color: #fff;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+}
+
+.price .content h3 span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.price .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    margin: 30PX;
+}
+
+
+.price .box-container .box {
+    padding: 2rem 0;
+    background: #333;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.price .box-container .box :hover {
+    transform: scale(1.03);
+}
+
+.price .box-container .box .title {
+    background: var(--main-color);
+    color: #fff;
+    padding: 1.5rem 0;
+    font-size: 2rem;
+}
+
+.price .box-container .box .amount {
+    color: #fff;
+    padding-top: 2rem;
+    font-size: 4rem;
+
+}
+
+.price .box-container .box ul {
+    list-style-type: none;
+    padding: 1rem 0;
+
+
+}
+
+.price .box-container .box ul li {
+    font-size: 1.5rem;
+    color: #eee;
+    padding: 1rem 0;
+
+}
+
+.price .box-container .box ul li i {
+    color: var(--main-color);
+    padding: .5rem;
+
+}
+
+section {
+    padding: 2rem;
+}
+
+.footer {
+    background: #222;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    margin-left: 59px;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+.footer .box-container .box p {
+    font-size: 1rem;
+    color: #fff;
+    text-align: left;
+    padding-left: -20px;
+}
+
+.footer .box-container .box a {
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: #eee;
+}
+
+.footer .box-container .box a i {
+    padding-right: .5rem;
+    color: var(--main-color);
+}
+
+.footer .box-container .box a:hover i {
+    padding-right: 1.5rem;
+    color: #fff;
+}
+
+.footer .credit {
+    text-align: center;
+    border-top: .1rem solid #333;
+    color: #fff;
+    padding: 2rem;
+    padding-top: 2.5rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.footer .credit span {
+    color: var(--main-color);
+}
+
+@media (max-width:768px) {
+    #menu-bars {
+        display: initial;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        border-top: .1rem solid #222;
+        background: #333;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .heading {
+        font-size: 20px;
+        padding-top: 40px;
+    }
+
+    div.cover {
+        height: 300px;
+
+    }
+
+    .price .box-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 15px;
+    }
+
+    .price .box-container .box {
+        padding: 1rem 0;
+    }
+
+    .price .box-container .box .title {
+        font-size: 1.5rem;
+    }
+
+    .price .box-container .box .amount {
+        font-size: 2rem;
+    }
+
+    .price .box-container .box ul li {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: .4rem 1.5rem;
+
+    }
+
+
+    .footer-top {
+        width: 40%
+    }
+
+    .footer .box-container .box h3 {
+        font-size: 20px;
+
+    }
+
+    .footer .box-container .box p {
+        font-size: 7px;
+    }
+
+    .footer .box-container .box a {
+        font-size: 10px;
+    }
+
+    .footer .credit {
+        font-size: 10px
+    }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- header section starts  -->
+
+    <header class="header">
+
+
+        <a href="#" class="logo"><span>Fairy</span>Kingdom BD</a>
+
+        <nav class="navbar">
+            <a href="../index.html">home</a>
+            <a href="../service/service.html">service</a>
+            <a href="../about us/about.html">about</a>
+            <a href="../gallery/gallery.html">gallery</a>
+            <a href="../price/price.html">price</a>
+            <a href="../review/review.html">review</a>
+            <a href="../contact/contact.html">contact</a>
+        </nav>
+
+        <div id="menu-bars" class="fas fa-bars"></div>
+
+    </header>
+    <div class="cover">
+        <h1 class="title"><strong>Gallery</strong></h1>
+    </div>
+
+    <!-- <div class="full-img" id="fullImgBox">
+        <!-- <img src="../images/g-5.jpg" id="fullImg"> -->
+    <!-- <span onclick="closefullImg()">X</span> -->
+
+    </div> -->
+
+    <div class="img-gallery">
+        <img src="../images/g-5.jpg" onclick="openfullImg(this.src)" height="200px" width="300px">
+        <img src="../images/wedding4.jpg" onclick="openfullImg(this.src)" height="200px" width="300px">
+        <img src="../images/g-4.jpg" onclick="openfullImg(this.src)" height="200px" width="300px">
+        <img src="../images/g-7.jpg" onclick="openfullImg(this.src)" height="200px" width="300px">
+        <img src="../images/corporate1 .jpg" onclick="openfullImg(this.src)" height="200px" width="300px">
+        <img src="../images/g-8.jpg" onclick="openfullImg(this.src)" height="200px" width="300px">
+        <img src="../images/g-3.jpg" onclick="openfullImg(this.src)" height="200px" width="300px">
+        <img src="../images/g-1.jpg" onclick="openfullImg(this.src)" height="200px" width="300px">
+        <img src="../images/wedding5.jpg" onclick="openfullImg(this.src)" height="200px" width="300px">
+        <img src="../images/wedding3.jpg" onclick="openfullImg(this.src)" height="200px" width="300px">
+        <img src="../images/wedding.jpg" onclick="openfullImg(this.src)" height="200px" width="300px">
+        <img src="../images/g-2.jpg" onclick="openfullImg(this.src)" height="200px" width="300px">
+    </div>
+    <script>
+        var fullImgBox = document.getElementById('fullImgBox');
+        var fullImg = document.getElementById('fullImg');
+        function openfullImg(pic) {
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+        function closefullImg() {
+            fullImgBox.style.display = "none";
+        }
+
+    </script>
+
+    <!--Footer part start-->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Fairy Kingdom BD</h3>
+                <p class="address">Haider Tower, House No. 668, Choydana Ward No. 34, Gazipur City
+                    CorporationGazipur
+                    1704 Bangladesh</p>
+
+
+            </div>
+
+
+            <div class="box">
+                <h3>company</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> service </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> about </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> gallery </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> price </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> reivew </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> contact </a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"> <i class="fas fa-phone"></i> +8802222222222 </a>
+                <a href="#"> <i class="fas fa-phone"></i> +8801111111111 </a>
+                <a href="#"> <i class="fas fa-envelope"></i> fairykingdombd@gmail.com</a>
+                <a href="#"> <i class="fas fa-envelope"></i> fairykingdombd@gmail.com </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Bangladesh </a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+                <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+                <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+                <a href="#"> <i class="fab fa-behance"></i> Behance </a>
+            </div>
+        </div>
+        <div class="credit"> created by <span>Sahera web designer</span> | all rights reserved </div>
+    </section>
+
+    <!--footer part end-->
+</body>
+
+</html>
